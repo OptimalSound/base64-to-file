@@ -3,7 +3,7 @@ const fse = require('fs-extra')
 const path = require('path');
 
 // get input parameter values from config
-var fileName = path.join(process.env.RUNNER_TEMP,core.getInput('fileName'));
+var fileName = path.join(process.env.GITHUB_WORKSPACE,core.getInput('fileName'));
 
 var encodedString = core.getInput('encodedString');
 
